@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // RESPAWN
-        if (tr.position.y < 0) {
+        if (tr.position.y < 0 && !DetectPlayer.didWin) {
             Start();
         }
     }
